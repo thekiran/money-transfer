@@ -1,0 +1,248 @@
+.head-container {
+  /* min-height: 500px; */
+  /* background: rgba(255, 0, 0, 0.281); */
+  display: flex;
+  flex-direction: row;
+  /* font: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  max-width: 1200px;
+  margin: 2em auto 0 auto;
+  /* height: 400px;
+  background: #000;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100%); */
+}
+.header-content {
+  /* background: rgb(0, 255, 55); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 0 1em;
+}
+.head-title {
+  margin: 1em auto 1em 0;
+  font-size: 1.7em;
+  max-width: 500px;
+}
+.head-text {
+  max-width: 400px;
+  margin: 1em auto 1em 0;
+  font-size: 0.7em;
+}
+.head-anims {
+  margin: 3em auto 0 0;
+}
+
+.main-content {
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* background: rgb(23, 224, 124); */
+  /* margin: 2em auto; */
+  padding: 2em auto;
+  margin: 1em 0;
+  /* background-color: red; */
+}
+
+.main-content .calc {
+  /* background: rgba(255, 0, 0, 0.322); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+#rate {
+  /* background: #fff; */
+  color: #fff;
+  display: block;
+  margin: 2em auto;
+  font-size: 0.7em;
+  width: fit-content;
+}
+
+.calc .cur-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.res {
+  position: relative;
+}
+.res-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.calc .cur-list li,
+.res-list li {
+  list-style: none;
+}
+.calc .cur-select {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.calc .res-select {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.calc .cur-select.active {
+  display: block;
+}
+.cur-list button {
+  font-size: 1.3em;
+  width: 150px;
+  height: 80px;
+  position: relative;
+}
+.res-list button {
+  font-size: 1.3em;
+  width: 150px;
+  height: 80px;
+  position: relative;
+}
+.cur-list button::after,
+.res-list button::after {
+  content: '>';
+  position: absolute;
+  transform: rotate(90deg);
+  color: green;
+  /* top: 50%; */
+  right: 0;
+}
+.calc label.calc-inp,
+.calc label.calc-out {
+  background: #fff;
+  display: block;
+  padding: 10px 0 0 10px;
+  margin: 0em auto;
+  /* min-height: 30px; */
+  width: fit-content;
+  color: #000;
+  border: none;
+  min-width: 300px;
+  font-size: 0.7em;
+}
+input#calc-inp,
+input#calc-out {
+  display: block;
+  margin: 0em auto;
+  height: 50px;
+  width: 300px;
+  border: none;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  padding: 0 0 10px 10px;
+}
+
+input#calc-inp:hover {
+  border: none;
+}
+.get-btn {
+  display: block;
+  background: rgb(1, 252, 168);
+  height: 3em;
+  width: 60%;
+  /* min-width: 300px; */
+  margin: 4em 6.9em 0 auto;
+}
+@media (max-width: 768px) {
+  .head-container {
+    flex-direction: column;
+  }
+  .header-content {
+    max-width: 500px;
+  }
+  .main-content .calc {
+    margin: 2em auto;
+    position: relative;
+  }
+  /* .main-content .calc form {
+    position: relative;
+  } */
+}
+
+@media (max-width: 500px) {
+  .cur-list {
+    left: 70%;
+  }
+  .res-list {
+    left: 70%;
+  }
+  #rate {
+    margin: 7em auto 3em 0;
+  }
+  .main-content {
+    position: relative;
+    margin: 3em 0;
+    height: 300px;
+  }
+  .main-content .calc {
+    /* background: #000; */
+    position: absolute;
+    left: 10%;
+  }
+  .calc #calc-form {
+    /* background: red; */
+    position: absolute;
+    left: 0;
+    margin: 0 auto 0 0;
+  }
+  /* .res form {
+    position: absolute;
+    left: 0;
+    margin: 0 auto 0 0;
+  } */
+  .res-list button {
+    /* left: 50%; */
+    max-width: 130px;
+    min-width: 100px;
+  }
+  .cur-list button {
+    max-width: 130px;
+    min-width: 100px;
+  }
+  /* .res {
+    position: relative;
+  }
+  .res form {
+    position: absolute;
+    left: 0;
+    margin: 0 auto 0 0;
+  } */
+  .get-btn {
+    position: relative;
+    top: 100%;
+    /* background-origin: padding-box; */
+    /* position: static; */
+    /* margin: 10em auto 0 auto; */
+  }
+  .get-btn {
+    display: block;
+    height: 3em;
+    width: 60%;
+    margin: 5em auto 0 auto;
+  }
+}
+
+@media (max-width: 300px) {
+  /* .main-content .calc {
+    width: 100%;
+    height: 100%;
+    margin: 0 1em 0 0;
+    position: relative;
+  } */
+  .main-content .calc {
+    /* background: #000; */
+    position: absolute;
+    left: 0%;
+  }
+}

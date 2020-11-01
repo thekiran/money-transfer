@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Syne+Mono&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.sweep-head {
+  width: 100vw;
+  height: 100vh;
+  /* background: #ffffffea; */
+}
+
+.sweep {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 100%;
+  width: 100%;
+}
+.sweep::after {
+  content: 'Loading...';
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 100%;
+  width: 100%;
+}
+.sweep-head.sweep--hide {
+  opacity: 0;
+  display: none;
+}
+
+/* $font-family-data: (
+  base: #{system-ui,
+  BlinkMacSystemFont,
+  -apple-system,
+  Segoe UI,
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  Fira Sans,
+  Droid Sans,
+  Helvetica Neue,
+  sans-serif},
+  mono: #{Menlo,
+  Monaco,
+  Consolas,
+  Liberation Mono,
+  Courier New,
+  monospace},
+); */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  background: #fff;
+  /* background: #1e1e24; */
+  font-size: 25px;
+}
+.main-header {
+  padding: 0 0 8em 0;
+  margin-bottom: -5em;
+  background: #10cac4b2;
+  clip-path: polygon(0 0, 0 100%, 100% calc(100% - 5vw), 100% 0);
+}
+.space {
+  /* background: #fff; */
+  position: relative;
+  /* background-color: #37517e; */
+  height: 200vh;
+  width: 100vw;
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .main-header {
+    /* padding: 0 0 8em 0; */
+    margin-bottom: 5em;
+    clip-path: none;
+  }
+}
