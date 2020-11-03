@@ -2,18 +2,97 @@
   /* width; */
   position: relative;
   z-index: 3;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  /* background: #b80006; */
 }
 
 .showcase-content {
-  max-width: 1200px;
-  margin: 2em auto;
+  background: #b80006;
+  max-width: 950px;
+  margin: 0em auto;
+  max-height: 850px;
+  /* box-shadow: 0 0 20px rgb(20, 3, 255); */
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.showcase-content:hover {
+  box-shadow: 0 0 100px rgb(255, 255, 255);
+  max-height: auto;
 }
 .show-box {
-  margin: 0 auto;
-  background: red;
-  height: 600px;
-  width: 80%;
+  margin: 0 0 0 0;
+  height: 100%;
+  /* background: red; */
+  /* height: 600px; */
+  width: 100%;
   /* box-shadow: 20px 20px #000; */
   /* -webkit-box-shadow: 0 0 10px #000; */
-  box-shadow: 0 0 20px #000;
+}
+.show-content {
+  margin: 1em auto;
+  width: 80%;
+}
+.chart {
+  background: #b80006;
+  width: 90%;
+  margin: 0 auto;
+}
+.show-title {
+  font-size: 1.2em;
+  margin: 0 auto 0 0;
+  padding: 0.5em 0;
+}
+.show-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  padding: 0 0 1.5em 0;
+}
+.btn-track {
+  display: none;
+  width: fit-content;
+  background: #666666;
+  box-shadow: 0 0 10px green;
+  padding: 0.5em;
+  margin: 0.5em auto 0em auto;
+}
+.showcase-content:hover .btn-track {
+  display: block;
+}
+.text-container {
+  height: 330px;
+  width: 100vw;
+  background: #000;
+  color: red;
+  /* clip-path: polygon(0 0, 0 100%, 100% 100%, calc(100% - 5vw) 0); */
+  clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0 100%);
+  clip-path: polygon(0 40%, 100% 0%, 100% calc(100% - 5vw), 0% 100%);
+}
+.show-text {
+  background: #000;
+  max-width: 950px;
+  padding: 5em 0 0 0;
+  margin: 0em auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.show-text h6 {
+  padding: 2em;
+}
+.show-text p {
+  font-size: 0.8em;
+  width: 70%;
+  margin: auto 0;
+}
+@media (max-width: 2000px) {
+  .text-container {
+    /* height: 600px; */
+  }
+}
+@media (max-width: 576px) {
+  .show-stats {
+    flex-direction: column;
+  }
 }

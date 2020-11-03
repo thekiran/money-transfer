@@ -6,10 +6,10 @@
   position: relative;
   font-family: 'Syne Mono', monospace;
   /* background: #fff; */
-  border-bottom: aqua 1px solid;
-  /* color: #fff; */
+  border-bottom: rgba(255, 255, 255, 0.151) 1px solid;
+  color: inherit;
   /* color: #000; */
-  border-radius: 5%;
+  /* border-radius: 10%; */
 }
 .main-nav.is-active {
   /* background: #4b55589a; */

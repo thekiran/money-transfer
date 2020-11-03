@@ -60,20 +60,26 @@ body {
   width: 100vw;
   height: auto;
   overflow-x: hidden;
-  background: #fff;
+  background: #1d201d;
+  /* background: #ff333a; */
+  background: #b80006;
+  /* background-color: #666666; */
   /* background: #1e1e24; */
   font-size: 25px;
 }
 .main-header {
   padding: 0 0 8em 0;
   margin-bottom: -5em;
-  background: #10cac4b2;
+  background: #090302;
+  /* background: #080708; */
+  color: #fff;
+  color: #b80006;
   clip-path: polygon(0 0, 0 100%, 100% calc(100% - 5vw), 100% 0);
 }
 .space {
-  /* background: #fff; */
+  /* background: rgba(88, 88, 88, 0.986); */
   position: relative;
-  /* background-color: #37517e; */
+  background-color: inherit;
   height: 200vh;
   width: 100vw;
   z-index: 2;
