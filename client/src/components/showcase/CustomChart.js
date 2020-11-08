@@ -4,7 +4,7 @@ import { Bar, Line, Pie, defaults } from 'react-chartjs-2'
 
 defaults.global.legend.display = false
 defaults.scale.ticks.display = false
-console.log(defaults.global)
+// console.log(defaults.global)
 class Chart extends Component {
   componentDidMount() {
     let data = {}

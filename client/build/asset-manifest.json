@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5d5c5b0c.chunk.css",
+    "main.js": "/static/js/main.3edcc23e.chunk.js",
+    "main.js.map": "/static/js/main.3edcc23e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
+    "static/js/2.0def8bbf.chunk.js": "/static/js/2.0def8bbf.chunk.js",
+    "static/js/2.0def8bbf.chunk.js.map": "/static/js/2.0def8bbf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9dc492279b61cc540710a62c406626f5.js": "/precache-manifest.9dc492279b61cc540710a62c406626f5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5d5c5b0c.chunk.css.map": "/static/css/main.5d5c5b0c.chunk.css.map",
+    "static/js/2.0def8bbf.chunk.js.LICENSE.txt": "/static/js/2.0def8bbf.chunk.js.LICENSE.txt",
+    "static/media/about.jpg": "/static/media/about.3e6a0f21.jpg",
+    "static/media/about.svg": "/static/media/about.f38f0e6a.svg",
+    "static/media/apple.svg": "/static/media/apple.4c6b5dcc.svg",
+    "static/media/bank.svg": "/static/media/bank.49c9d684.svg",
+    "static/media/brand.png": "/static/media/brand.57cf6581.png",
+    "static/media/calculator.svg": "/static/media/calculator.f64bde51.svg",
+    "static/media/carousel1.jpeg": "/static/media/carousel1.6ebfab22.jpeg",
+    "static/media/carousel2.jpeg": "/static/media/carousel2.847b9f13.jpeg",
+    "static/media/carousel3.jpeg": "/static/media/carousel3.96e9df2b.jpeg",
+    "static/media/money.svg": "/static/media/money.3bb11a40.svg",
+    "static/media/play.svg": "/static/media/play.a53de91e.svg",
+    "static/media/report.svg": "/static/media/report.447e03c3.svg",
+    "static/media/school.svg": "/static/media/school.4473d828.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a21426.js",
+    "static/js/2.0def8bbf.chunk.js",
+    "static/css/main.5d5c5b0c.chunk.css",
+    "static/js/main.3edcc23e.chunk.js"
+  ]
+}

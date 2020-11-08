@@ -102,7 +102,7 @@
   color: #fff;
   font-size: 1.3em;
   width: 150px;
-  height: 80px;
+  height: 85px;
   position: relative;
 }
 .res-list button {
@@ -110,8 +110,17 @@
   color: #fff;
   font-size: 1.3em;
   width: 150px;
-  height: 80px;
+  height: 85px;
   position: relative;
+}
+/* firefox support*/
+@-moz-document url-prefix() {
+  .res-list button {
+    height: 80px;
+  }
+  .cur-list button {
+    height: 80px;
+  }
 }
 .cur-list button::after,
 .res-list button::after {
@@ -126,7 +135,7 @@
 .calc label.calc-out {
   background: #fff;
   display: block;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 0px 10px;
   margin: 0em auto;
   /* min-height: 30px; */
   width: fit-content;
